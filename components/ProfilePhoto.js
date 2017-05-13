@@ -5,14 +5,9 @@ import { sample, replace, trimEnd } from 'lodash';
 const ProfilePhoto = (props) => {
 	const {src, style} = props;
 
-	// const imagePool = [
-	// 	'/regan.jpg',
-	// 	'/reganprofile.png'
-	// ];
-
 	const mergedStyles = Object.assign({
     border: '.25em solid',
-    borderColor: '#01A1DD',
+    borderColor: '#224C00',
     borderRadius: '50%',
     maxWidth: '80px',
     maxHeight: '80px',

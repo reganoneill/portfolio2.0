@@ -6,7 +6,6 @@ import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 import ProfilePhoto from '../components/ProfilePhoto';
-
 //TODO: wire this in
 //import '../css/landing.scss';
 
