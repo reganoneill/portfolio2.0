@@ -5,10 +5,10 @@ import { sample, replace, trimEnd } from 'lodash';
 const ProfilePhoto = (props) => {
 	const {src, style} = props;
 
-	const imagePool = [
-		'/regan.jpg',
-		'/reganprofile.png'
-	];
+	// const imagePool = [
+	// 	'/regan.jpg',
+	// 	'/reganprofile.png'
+	// ];
 
 	const mergedStyles = Object.assign({
     border: '.25em solid',
@@ -19,10 +19,12 @@ const ProfilePhoto = (props) => {
     flexShrink: '0',
   }, style);
 
-	const photoSource = src || sample(imagePool);
+	// const photoSource = src || sample(imagePool);
+	const photoSource = src;
   return (
     <img
-      src={prefixLink(photoSource)}
+      //src={prefixLink(photoSource)}
+			src={require('../assets/reganprofile.png')}
       alt={trimEnd(replace(photoSource, '-', ' '), '.jpg' || '.png')}
       style={mergedStyles}
     />);
