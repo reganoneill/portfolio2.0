@@ -2,12 +2,12 @@ import React from 'react';
 import { prefixLink } from 'gatsby-helpers';
 import { sample, replace, trimEnd } from 'lodash';
 
-const ProfilePic = (props) => {
+const ProfilePhoto = (props) => {
 	const {src, style} = props;
 
 	const imagePool = [
-		'../assets/reganprofile.png',
-		'../assets/regan.jpg'
+		'/regan.jpg',
+		'/reganprofile.png'
 	];
 
 	const mergedStyles = Object.assign({
@@ -19,7 +19,7 @@ const ProfilePic = (props) => {
     flexShrink: '0',
   }, style);
 
-	const photoSource = src || sample(photosSources);
+	const photoSource = src || sample(imagePool);
   return (
     <img
       src={prefixLink(photoSource)}
@@ -28,9 +28,9 @@ const ProfilePic = (props) => {
     />);
 }
 
-ProfilePic.propTypes = {
+ProfilePhoto.propTypes = {
   src: React.PropTypes.string,
   style: React.PropTypes.shape({}),
 };
 
-export default ProfilePic;
+export default ProfilePhoto;

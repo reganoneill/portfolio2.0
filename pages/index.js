@@ -12,8 +12,7 @@ import ProfilePhoto from '../components/ProfilePhoto';
 
 const SiteIndex = () => (
     <div className="shell">
-      <div className="main-landing">
-        //TODO: create ProfilePhoto component
+      <div className="main_landing">
         <ProfilePhoto
           style={{
             margin: '0 auto',
