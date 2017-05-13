@@ -18,10 +18,10 @@ const SiteIndex = () => (
             maxWidth: '200px',
             maxHeight: '200px',
         }}/>
-        <h1>{config.siteOwner}</h1>
+        <h1>{config.siteAuthor}</h1>
         <h3>Software Developer</h3>
         <h4>Seattle, WA</h4>
-
+        <Link to={prefixLink('/page-2/')}>Go to page 2</Link>
       </div>
     </div>
 

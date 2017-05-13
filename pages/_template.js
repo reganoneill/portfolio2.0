@@ -11,45 +11,56 @@ import '../css/main.scss';
 
 const Template = (props) => {
   const { location, children } = props;
-  header = (
-    <Container
-      style={{
-      maxWidth: rhythm(24),
-      margin: 'auto',
-      }}
-    >
-  );
-
   let header;
+  let documentTitle = config.siteTitle;
+
+  if(location.pathname != prefixLink('/')){
+      documentTitle = `${documentTitle} :: ${capitalize(trim(location.pathname, '/'))}`;
+    header = (
+      <Container
+        style={{
+        maxWidth: rhythm(24),
+        margin: 'auto',
+        }}
+      >
+      <p>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+              }}
+              to={prefixLink('/')}
+            >
+              {config.siteAuthor}
+            </Link>
+          </p>
+        </Container>);
+  }
 
   const helmet = (
   <Helmet
     meta={[
-      { property: 'og:url', content: config.blogUrl },
+      { property: 'og:url', content: config.siteURL },
       { property: 'og:type', content: 'blog' },
-      { property: 'og:title', content: config.blogTitle },
-      { property: 'og:site_name', content: config.blogTitle },
-      { property: 'og:image', content: fullImagePath },
-      { property: 'fb:admins', content: config.fbAdminsId },
-      { name: 'twitter:title', content: config.blogTitle },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:site', content: config.authorTwitter },
-      { name: 'twitter:creator', content: config.authorTwitter },
-      { name: 'twitter:description', content: `${config.authorTwitter} ${config.blogTitle}` },
-      { name: 'twitter:image', content: fullImagePath },
+      { property: 'og:title', content: config.siteTitle },
+      { property: 'og:site_name', content: config.siteTitle },
     ]}
     title={documentTitle}
-    defaultTitle={config.blogTitle}
+    defaultTitle={config.siteTitle}
   />);
 
   return (
-    <div className="wrapper">
+    <div>
       {helmet}
       {header}
       {children}
     </div>
   );
- }
+};
 
+// Template.propTypes = {
+//   children: React.PropTypes.shape({}),
+//   location: React.PropTypes.shape({})
+// };
 
 export default Template;
