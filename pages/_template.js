@@ -6,7 +6,7 @@ import { config } from 'config';
 import { trim, capitalize } from 'lodash';
 import { rhythm } from '../utils/typography';
 import { Container } from 'react-responsive-grid';
-
+import Nav from '../components/Navigation.js';
 import '../css/main.scss';
 
 const Template = (props) => {
@@ -31,9 +31,9 @@ const Template = (props) => {
               }}
               to={prefixLink('/')}
             >
-              {config.siteAuthor}
             </Link>
           </p>
+          <Nav />
         </Container>);
   }
 

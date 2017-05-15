@@ -1,0 +1,13 @@
+@import '../base/_vars.scss';
+
+body {
+	// background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
+	height: 100vh;
+
+	h1 {
+		color: $white;
+	}
+	p {
+		color: $white;
+	}
+}

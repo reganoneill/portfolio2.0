@@ -1,18 +1,32 @@
+body {
+	background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
+}
 nav {
-	background: yellow;
 	display: flex;
 	justify-content: center;
 	ul {
+		margin: 2em 0;
+		width: 80%;
+		display: flex;
+		justify-content: space-around;
 		li {
 			display: inline-block;
-			margin: 0 3px;
+			// margin: 0 3px;
+			a{
+				text-transform: uppercase;
+				// text-decoration: underline;
+				font-size: 1.25em;
+				color: $white;
+				&:hover {
+					text-decoration: overline;
+				}
+			}
 		}
 	}
 }
 
 .shell {
-		background: $deep-blue;
-		background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
+		// background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
 		color: $white;
 		height: 100vh;
 		display: flex;
@@ -24,4 +38,25 @@ nav {
 			justify-content: center;
 			text-align: center;
 		}
+}
+
+@media screen and (max-width: 530px){
+	.shell {
+		.main_landing {
+			nav {
+				display: flex;
+				flex-direction: row;
+				ul {
+					display: block;
+					li {
+						display: block;
+						margin: 1em 0;
+						a {
+
+						}
+					}
+				}
+			}
+		}
+	}
 }

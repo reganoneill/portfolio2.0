@@ -8,7 +8,7 @@ const ProfilePhoto = (props) => {
 
 	const mergedStyles = Object.assign({
     border: '.25em solid',
-    borderColor: '$beets',
+    // borderColor: '$beets',
     borderRadius: '50%',
     maxWidth: '80px',
     maxHeight: '80px',

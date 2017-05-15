@@ -8,6 +8,7 @@ import { config } from 'config';
 import Navigation from '../components/Navigation';
 import ProfilePhoto from '../components/ProfilePhoto';
 
+import '../css/modules/styles.scss';
 
 const SiteIndex = () => (
     <div className="shell">
