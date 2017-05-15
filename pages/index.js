@@ -8,6 +8,7 @@ import { config } from 'config';
 import Navigation from '../components/Navigation';
 import ProfilePhoto from '../components/ProfilePhoto';
 
+
 const SiteIndex = () => (
     <div className="shell">
       <div className="main_landing">
