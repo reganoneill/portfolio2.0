@@ -1,5 +1,27 @@
+nav {
+	background: yellow;
+	display: flex;
+	justify-content: center;
+	ul {
+		li {
+			display: inline-block;
+			margin: 0 3px;
+		}
+	}
+}
+
 .shell {
 		background: $deep-blue;
+		background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
 		color: $white;
-		height: 85vh;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		.main_landing {
+			min-width: 90%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+		}
 }

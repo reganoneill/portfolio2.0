@@ -5,9 +5,8 @@ import moment from 'moment';
 import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
+import Navigation from '../components/Navigation';
 import ProfilePhoto from '../components/ProfilePhoto';
-//TODO: wire this in
-//import '../css/landing.scss';
 
 const SiteIndex = () => (
     <div className="shell">
@@ -20,8 +19,7 @@ const SiteIndex = () => (
         }}/>
         <h1>{config.siteAuthor}</h1>
         <h3>Software Developer</h3>
-        <h4>Seattle, WA</h4>
-        <Link to={prefixLink('/page-2/')}>Go to page 2</Link>
+        <Navigation />
       </div>
     </div>
 

@@ -1,13 +1,14 @@
 import React from 'react';
 import { prefixLink } from 'gatsby-helpers';
 import { sample, replace, trimEnd } from 'lodash';
+import '../css/base/_vars.scss';
 
 const ProfilePhoto = (props) => {
 	const {src, style} = props;
 
 	const mergedStyles = Object.assign({
     border: '.25em solid',
-    borderColor: '#224C00',
+    borderColor: '$beets',
     borderRadius: '50%',
     maxWidth: '80px',
     maxHeight: '80px',
