@@ -1,27 +1,97 @@
-nav {
-	background: yellow;
-	display: flex;
-	justify-content: center;
-	ul {
-		li {
-			display: inline-block;
-			margin: 0 3px;
+body {
+	background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
+	.shell {
+			color: $white;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			.main_landing {
+				min-width: 90%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: center;
+			}
+	}
+	.headerLayout {
+		display: flex;
+		justify-content: space-between;
+		.brand {
+			margin: auto 1em;
+		}
+		nav {
+			width: 60%;
+			.mobileNavIcon {
+				display: none;
+				color: $white;
+			}
+			ul {
+				width: 100%;
+			}
+		}
+	}
+	nav {
+		display: flex;
+		justify-content: center;
+		ul {
+			margin: 2em 0;
+			width: 80%;
+			display: flex;
+			justify-content: space-around;
+			li {
+				display: inline-block;
+				// margin: 0 3px;
+				a{
+					text-transform: uppercase;
+					// text-decoration: underline;
+					font-size: 1.25em;
+					color: $white;
+					&:hover {
+						text-decoration: overline;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+// responsive nav menu on home screen
+@media screen and (max-width: 530px){
+	.shell {
+		.main_landing {
+			nav {
+				display: flex;
+				flex-direction: row;
+				ul {
+					display: block;
+					li {
+						display: block;
+						margin: 1em 0;
+						a {
+
+						}
+					}
+				}
+			}
 		}
 	}
 }
+//responsive nav for all pages except home
+@media screen and (max-width: 750px){
+	body{
 
-.shell {
-		background: $deep-blue;
-		background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
-		color: $white;
-		height: 100vh;
-		display: flex;
-		justify-content: center;
-		.main_landing {
-			min-width: 90%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			text-align: center;
+	.headerLayout{
+		nav {
+
+		.mobileNavIcon {
+			display: inline-block;
 		}
+		ul {
+			display: none;
+		}
+	}
+}
+}
 }

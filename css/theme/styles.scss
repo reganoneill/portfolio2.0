@@ -1,0 +1,24 @@
+@import '../base/_vars.scss';
+
+header {
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: flex-end;
+	p {
+		color: $white;
+	}
+}
+
+
+.mainPage {
+	height: 100vh;
+	h1 {
+		margin: 0.25em;
+		color: $white;
+	}
+	p {
+		margin: 1.75em;
+		color: white;
+		line-height: 1.5em;
+	}
+}
