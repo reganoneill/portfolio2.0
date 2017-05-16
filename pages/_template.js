@@ -6,7 +6,9 @@ import { config } from 'config';
 import { trim, capitalize } from 'lodash';
 import { rhythm } from '../utils/typography';
 import { Container } from 'react-responsive-grid';
-import Nav from '../components/Navigation.js';
+import Header from '../components/Header.js';
+
+
 import '../css/main.scss';
 
 const Template = (props) => {
@@ -17,24 +19,26 @@ const Template = (props) => {
   if(location.pathname != prefixLink('/')){
       documentTitle = `${documentTitle} :: ${capitalize(trim(location.pathname, '/'))}`;
     header = (
-      <Container
-        style={{
-        maxWidth: rhythm(24),
-        margin: 'auto',
-        }}
-      >
-      <p>
-            <Link
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-              }}
-              to={prefixLink('/')}
-            >
-            </Link>
-          </p>
-          <Nav />
-        </Container>);
+      <header>
+        <Container>
+         <div className="headerLayout">
+          <p className='brand'>
+              <Link
+                style={{
+                  textDecoration: 'none',
+                  color: 'inherit',
+                }}
+                to={prefixLink('/')}
+              >
+              {config.siteAuthor}
+              </Link>
+            </p>
+
+            <Header />
+         </div>
+        </Container>
+      </header>
+      );
   }
 
   const helmet = (
@@ -58,9 +62,10 @@ const Template = (props) => {
   );
 };
 
-// Template.propTypes = {
-//   children: React.PropTypes.shape({}),
-//   location: React.PropTypes.shape({})
-// };
+Template.propTypes = {
+  children: React.PropTypes.shape({}),
+  location: React.PropTypes.shape({})
+ };
+
 
 export default Template;

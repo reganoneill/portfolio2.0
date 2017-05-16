@@ -5,12 +5,12 @@ import moment from 'moment';
 import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
-import Navigation from '../components/Navigation';
+import Nav from '../components/IndexNav';
 import ProfilePhoto from '../components/ProfilePhoto';
 
 import '../css/modules/styles.scss';
 
-const SiteIndex = () => (
+const SiteIndex = (props) => (
     <div className="shell">
       <div className="main_landing">
         <ProfilePhoto
@@ -21,7 +21,7 @@ const SiteIndex = () => (
         }}/>
         <h1>{config.siteAuthor}</h1>
         <h3>Software Developer</h3>
-        <Navigation />
+        <Nav />
       </div>
     </div>
 

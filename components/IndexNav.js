@@ -1,8 +1,11 @@
 import React from 'react';
 import {prefixLink} from 'gatsby-helpers';
+import { Link } from 'react-router';
+import { config } from 'config';
 
-const Navigation = () => (
+const Navigation = (props) => (
 	<nav>
+
 		<ul>
 			<li><a href={prefixLink('/about/')}>about</a></li>
 			<li><a href={prefixLink('/portfolio/')}>portfolio</a></li>
@@ -11,5 +14,5 @@ const Navigation = () => (
 		</ul>
 	</nav>
 );
-
+//
 export default Navigation;
