@@ -21,7 +21,7 @@ body {
 		}
 		nav {
 			width: 60%;
-			.mobileNavIcon {
+			.small {
 				display: none;
 				color: $white;
 			}
@@ -85,10 +85,17 @@ body {
 	.headerLayout{
 		nav {
 
-		.mobileNavIcon {
+		.small {
 			display: inline-block;
+			ul {
+				flex-direction: column;
+				li {
+					display: block;
+					border: 1px solid yellow;
+				}
+			}
 		}
-		ul {
+		ul.large {
 			display: none;
 		}
 	}

@@ -10,7 +10,10 @@ import ProfilePhoto from '../components/ProfilePhoto';
 
 import '../css/modules/styles.scss';
 
-const SiteIndex = (props) => (
+class SiteIndex extends React.Component {
+  render(){
+
+  return(
     <div className="shell">
       <div className="main_landing">
         <ProfilePhoto
@@ -24,8 +27,10 @@ const SiteIndex = (props) => (
         <Nav />
       </div>
     </div>
+  )
+}
+  };
 
-  );
 
 SiteIndex.propTypes = {
   route: React.PropTypes.object,
