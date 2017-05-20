@@ -16,12 +16,14 @@ body {
 	.headerLayout {
 		display: flex;
 		justify-content: space-between;
+		max-height: 1em;
+		background: green;
 		.brand {
 			margin: auto 1em;
 		}
 		nav {
 			width: 60%;
-			.mobileNavIcon {
+			.small {
 				display: none;
 				color: $white;
 			}
@@ -79,19 +81,29 @@ body {
 	}
 }
 //responsive nav for all pages except home
-@media screen and (max-width: 750px){
+@media screen and (max-width: 900px){
 	body{
 
 	.headerLayout{
 		nav {
-
-		.mobileNavIcon {
-			display: inline-block;
+		.mobileNav {
+			.mobileNavIcon {
+				color: yellow;
+				display: inline-block;
+				ul {
+					flex-direction: column;
+					background: red;
+					li {
+						display: block;
+						border: 1px solid yellow;
+					}
+				}
+			}
 		}
-		ul {
+		ul.large {
 			display: none;
 		}
+		}
 	}
-}
 }
 }

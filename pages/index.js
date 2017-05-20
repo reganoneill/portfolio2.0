@@ -10,7 +10,10 @@ import ProfilePhoto from '../components/ProfilePhoto';
 
 import '../css/modules/styles.scss';
 
-const SiteIndex = (props) => (
+class SiteIndex extends React.Component {
+  render(){
+
+  return(
     <div className="shell">
       <div className="main_landing">
         <ProfilePhoto
@@ -20,12 +23,14 @@ const SiteIndex = (props) => (
             maxHeight: '200px',
         }}/>
         <h1>{config.siteAuthor}</h1>
-        <h3>Software Developer</h3>
+        <h3>secondary header</h3>
         <Nav />
       </div>
     </div>
+  )
+}
+  };
 
-  );
 
 SiteIndex.propTypes = {
   route: React.PropTypes.object,
