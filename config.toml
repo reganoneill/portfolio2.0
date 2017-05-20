@@ -1,4 +1,5 @@
-siteAuthor = "regan o'neill"
+# siteAuthor = "regan o'neill"
+siteAuthor = 'primary header'
 siteTitle = "regan o'neill"
 siteURL = "reganoneill.io"
 linkPrefix = "/bababa"

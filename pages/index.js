@@ -23,7 +23,7 @@ class SiteIndex extends React.Component {
             maxHeight: '200px',
         }}/>
         <h1>{config.siteAuthor}</h1>
-        <h3>Software Developer</h3>
+        <h3>secondary header</h3>
         <Nav />
       </div>
     </div>

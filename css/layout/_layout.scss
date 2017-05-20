@@ -16,6 +16,8 @@ body {
 	.headerLayout {
 		display: flex;
 		justify-content: space-between;
+		max-height: 1em;
+		background: green;
 		.brand {
 			margin: auto 1em;
 		}
@@ -79,26 +81,29 @@ body {
 	}
 }
 //responsive nav for all pages except home
-@media screen and (max-width: 750px){
+@media screen and (max-width: 900px){
 	body{
 
 	.headerLayout{
 		nav {
-
-		.small {
-			display: inline-block;
-			ul {
-				flex-direction: column;
-				li {
-					display: block;
-					border: 1px solid yellow;
+		.mobileNav {
+			.mobileNavIcon {
+				color: yellow;
+				display: inline-block;
+				ul {
+					flex-direction: column;
+					background: red;
+					li {
+						display: block;
+						border: 1px solid yellow;
+					}
 				}
 			}
 		}
 		ul.large {
 			display: none;
 		}
+		}
 	}
-}
 }
 }
