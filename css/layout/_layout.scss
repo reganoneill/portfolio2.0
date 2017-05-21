@@ -1,5 +1,9 @@
+@import '../base/vars.scss';
+
 body {
-	background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
+	// background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
+	background: linear-gradient(rgb(256, 225, 157), rgb(26, 63, 145));
+	height: 100vh;
 	.shell {
 			color: $white;
 			height: 100vh;
@@ -11,9 +15,17 @@ body {
 				flex-direction: column;
 				justify-content: center;
 				text-align: center;
+				nav {
+					.indexNav {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-around;
+					}
+				}
 			}
 	}
 	.headerLayout {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		max-height: 1em;
@@ -21,82 +33,46 @@ body {
 		.brand {
 			margin: auto 1em;
 		}
-		nav {
-			width: 60%;
-			.small {
-				display: none;
-				color: $white;
-			}
+		.navBar {
+		.full_nav {
 			ul {
-				width: 100%;
-			}
-		}
-	}
-	nav {
-		display: flex;
-		justify-content: center;
-		ul {
-			margin: 2em 0;
-			width: 80%;
-			display: flex;
-			justify-content: space-around;
-			li {
-				display: inline-block;
-				// margin: 0 3px;
-				a{
-					text-transform: uppercase;
-					// text-decoration: underline;
-					font-size: 1.25em;
-					color: $white;
-					&:hover {
-						text-decoration: overline;
-					}
-				}
-			}
-		}
-	}
-
-}
-
-
-// responsive nav menu on home screen
-@media screen and (max-width: 530px){
-	.shell {
-		.main_landing {
-			nav {
 				display: flex;
-				flex-direction: row;
-				ul {
-					display: block;
-					li {
-						display: block;
-						margin: 1em 0;
-						a {
-
+				li {
+					margin: 0 1em;
+					a {
+						font-size: 1.25em;
+						color: $white;
+						&:hover {
+							text-decoration: overline;
 						}
 					}
 				}
 			}
 		}
+		}
 	}
+
 }
+
 //responsive nav for all pages except home
 @media screen and (max-width: 900px){
 	body{
-
 	.headerLayout{
-		nav {
+		.navBar {
+			width: 40%;
 		.mobileNav {
+			display: flex;
+			flex-direction: column;
 			.mobileNavIcon {
 				color: yellow;
-				display: inline-block;
-				ul {
-					flex-direction: column;
-					background: red;
-					li {
-						display: block;
-						border: 1px solid yellow;
-					}
+				display: flex;
+				justify-content: flex-end;
+			}
+			ul {
+				flex-direction: column;
+				li {
+					display: block;
+					border: 1px solid $white;
 				}
 			}
 		}

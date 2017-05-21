@@ -1,9 +1,8 @@
-@import '../base/_vars.scss';
+@import '../base/vars.scss';
 
 header {
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: flex-end;
+	display: flex;
+	width: 100%;
 	p {
 		color: $white;
 	}
