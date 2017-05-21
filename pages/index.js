@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
-import sortBy from 'lodash/sortBy';
 import moment from 'moment';
 import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';

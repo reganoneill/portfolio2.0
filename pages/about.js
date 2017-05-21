@@ -1,11 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router';
-import sortBy from 'lodash/sortBy';
-import moment from 'moment';
 import Helmet from 'react-helmet';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
-import ProfilePhoto from '../components/ProfilePhoto';
 import '../css/theme/styles.scss';
 
 const AboutPage = () => (
