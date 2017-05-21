@@ -6,7 +6,7 @@ import { config } from 'config';
 import { trim, capitalize } from 'lodash';
 import { rhythm } from '../utils/typography';
 import { Container } from 'react-responsive-grid';
-import Header from '../components/Header.js';
+import MainNav from '../components/MainNav.js';
 
 
 import '../css/main.scss';
@@ -34,7 +34,7 @@ const Template = (props) => {
               </Link>
             </p>
 
-            <Header />
+            <MainNav />
          </div>
         </Container>
       </header>

@@ -62,7 +62,7 @@ class MainNav extends React.Component {
 	}
 	 render (){
 		 return(
-			<nav id="youBet!">
+			<nav id="navBar">
 				{this.renderNavbar()}
 			</nav>
 )
