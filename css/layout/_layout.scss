@@ -51,7 +51,13 @@ body {
 		}
 		}
 	}
-
+	.portfolioHolder {
+		padding: 0 1em;
+		li {
+			border: 1px black solid;
+			margin: 1em 0;
+		}
+	}
 }
 
 //responsive nav for all pages except home
