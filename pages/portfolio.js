@@ -6,8 +6,6 @@ import projects from '../data/portfolio.json';
 
 import '../css/theme/styles.scss';
 
-console.log(projects, '<--------- WOOOOOOOOOOOO!');
-
 const PortfolioPage = () => (
     <div className="mainPage">
 				<h1>Portfolio</h1>
@@ -16,7 +14,7 @@ const PortfolioPage = () => (
             {
               projects.map( item => {
                 return(
-                <PortfolioItem {...item}/>
+                  <PortfolioItem {...item}/>
                 )
               })
             }

@@ -3,12 +3,13 @@ import { prefixLink } from 'gatsby-helpers';
 import { sample, replace, trimEnd } from 'lodash';
 import '../css/base/_vars.scss';
 
-const PortfolioItem = ({name, image, link}) => {
+const PortfolioItem = ({name, image, link, tech, github}) => {
     return (
       <li>
         <img src={image}/>
         <a href={link}>{name}</a>
-        <p>test</p>
+        <a href={github}>SOURCE</a>
+        <p>Tech Used: {tech}</p>
       </li>
     )
 }

@@ -5,6 +5,8 @@
       "image":       "images/fremontPatroller.png",
       "collaborators": "Erick Mock, Marc Fieser, Pavel Parkhomey",
       "link":   "https://fremont-bike-patroller.herokuapp.com/",
+      "github": "https://github.com/reganoneill/fremont-bike-tracker",
+      "tech": "jQuery, Express, Moment, D3",
       "publishedOn": "2016-11-18",
       "description": "The goal was to use a RESTful API to display graphs of bike traffic across the Fremont Bridge."
     },
@@ -14,6 +16,8 @@
       "image":       "images/photo.png",
       "collaborators":  "Zachary Crumbo, Gary Lundgren",
       "link":   "http://www.fitomatic.bike",
+      "github": "https://github.com/GLSea1979/fit-O-matic",
+      "tech": "Angular, Express, MongoDB",
       "publishedOn": "",
       "description": "Full stack application where we hand built the API, a CMS to manage it, and a front end for users to interact with."
   }
