@@ -48,8 +48,8 @@ class MainNav extends React.Component {
 			return(
 				<div className="mobileNav">
 					<div onClick={this.handleNavClick.bind(this)} className="mobileNavIcon"><FaBars />
-					{this.renderMobileNav()}
 					</div>
+					{this.renderMobileNav()}
 				</div>
 			)
 		} else {
@@ -62,7 +62,7 @@ class MainNav extends React.Component {
 	}
 	 render (){
 		 return(
-			<nav id="navBar">
+			<nav className="navBar">
 				{this.renderNavbar()}
 			</nav>
 )

@@ -5,7 +5,6 @@ import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 import { trim, capitalize } from 'lodash';
 import { rhythm } from '../utils/typography';
-import { Container } from 'react-responsive-grid';
 import MainNav from '../components/MainNav.js';
 
 
@@ -20,7 +19,6 @@ const Template = (props) => {
       documentTitle = `${documentTitle} :: ${capitalize(trim(location.pathname, '/'))}`;
     header = (
       <header>
-        <Container>
          <div className="headerLayout">
           <p className='brand'>
               <Link
@@ -36,7 +34,6 @@ const Template = (props) => {
 
             <MainNav />
          </div>
-        </Container>
       </header>
       );
   }

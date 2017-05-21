@@ -1,0 +1,21 @@
+[
+  {
+      "title":       "Fremont Patroller",
+      "category":    "recreational",
+      "image":       "images/fremontPatroller.png",
+      "collaborators": "Erick Mock, Marc Fieser, Pavel Parkhomey",
+      "authorUrl":   "https://fremont-bike-patroller.herokuapp.com/",
+      "publishedOn": "2016-11-18",
+      "description": "The goal was to use a RESTful API to display graphs of bike traffic across the Fremont Bridge."
+    },
+    {
+      "title":       "Fit-O-Matic",
+      "category":    "recreational",
+      "image":       "images/photo.png",
+      "collaborators":  "Zachary Crumbo, Gary Lundgren",
+      "authorUrl":   "http://www.fitomatic.bike",
+      "publishedOn": "",
+      "description": "Full stack application where we hand built the API, a CMS to manage it, and a front end for users to interact with."
+  }
+
+]
