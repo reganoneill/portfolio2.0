@@ -2,9 +2,10 @@
 
 header {
 	display: flex;
+	height: 4em;
 	width: 100%;
 	p {
-		color: $white;
+		color: $deep-blue;
 	}
 }
 
@@ -17,7 +18,7 @@ header {
 	}
 	p {
 		margin: 1.75em;
-		color: white;
+		color: $deep-blue;
 		line-height: 1.5em;
 	}
 }

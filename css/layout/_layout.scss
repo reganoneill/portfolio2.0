@@ -1,8 +1,11 @@
 @import '../base/vars.scss';
 
 body {
-	// background: linear-gradient(rgb(6, 22, 57), rgb(26, 63, 145));
-	background: linear-gradient(rgb(256, 225, 157), rgb(26, 63, 145));
+	// background: linear-gradient(rgb(256, 225, 157), rgb(26, 63, 145));
+	background: -moz-linear-gradient(top, rgba(228,245,252,1) 37%, rgba(42,176,237,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(228,245,252,1) 37%,rgba(42,176,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(228,245,252,1) 37%,rgba(26, 63, 145, 1) 100%);
+
 	height: 100vh;
 	.shell {
 			color: $white;
@@ -28,13 +31,17 @@ body {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		max-height: 1em;
-		background: green;
+		align-items: center;
+		background: rgba(228,245,252,1);
+
 		.brand {
 			margin: auto 1em;
+			color: $deep-blue;
 		}
 		.navBar {
+			height: 100%;
 		.full_nav {
+			margin-top: 1.25em;
 			ul {
 				display: flex;
 				li {
@@ -54,7 +61,8 @@ body {
 	.portfolioHolder {
 		padding: 0 1em;
 		li {
-			border: 1px black solid;
+			border-top: 1px $deep-blue solid;
+			border-right: 1px $deep-blue solid;
 			margin: 1em 0;
 		}
 	}
@@ -64,15 +72,21 @@ body {
 @media screen and (max-width: 900px){
 	body{
 	.headerLayout{
+		align-items: center;
 		.navBar {
 			width: 40%;
 		.mobileNav {
 			display: flex;
 			flex-direction: column;
+			height: 100%;
 			.mobileNavIcon {
-				color: yellow;
+				color: $deep-blue;
 				display: flex;
 				justify-content: flex-end;
+				height: 100%;
+				margin-top: 1.35em;
+				margin-right: 1.5em;
+				margin-bottom: 3em;
 			}
 			ul {
 				flex-direction: column;
