@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers';
 import PortfolioItem from '../components/PortfolioItem';
 import projects from '../data/portfolio.json';
 
-import '../css/theme/styles.scss';
+// import '../css/theme/styles.scss';
 
 const PortfolioPage = () => (
     <div className="mainPage">
