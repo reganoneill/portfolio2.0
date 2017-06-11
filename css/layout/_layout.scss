@@ -18,11 +18,19 @@ body {
 				flex-direction: column;
 				justify-content: center;
 				text-align: center;
+				h3 {
+					margin: 0.75em 0;
+				}
 				nav {
+					border-top: 1px solid $beets;
 					.indexNav {
 						display: flex;
 						flex-direction: row;
 						justify-content: space-around;
+						margin: 2.5em 0;
+						li:hover {
+							border-top: 1px solid $beets;
+						}
 					}
 				}
 			}
@@ -72,11 +80,12 @@ body {
 			justify-content: center;
 			// outline: red solid 2px;
 			padding: 1em;
-			height: 35vh;
+			height: 45vh;
 			overflow: hidden;
 			margin-bottom: 2em;
 			.imageHolder {
 				overflow: hidden;
+				width: 100%;
 			}
 			.summaryHolder {
 				display: flex;
@@ -86,6 +95,35 @@ body {
 				width: 100%;
 				background-color: orange;
 			}
+			}
+		}
+	}
+
+
+	// about page
+.aboutSkills {
+	margin: 2em 0;
+}
+	.allSkills {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 40em;
+		//border: 1px black solid;
+		.skills {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 10em;
+			.techTool {
+				border: 1px solid;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 60px;
+				height: 6em;
+				width: 6em;
+
 			}
 		}
 	}
@@ -113,9 +151,13 @@ body {
 			}
 			ul {
 				flex-direction: column;
+				margin-top: -1.25em;
+				margin-right: 1.25em;
 				li {
-					display: block;
+					display: flex;
 					border: 1px solid $white;
+					justify-content: flex-end;
+					margin: 0.25em 0;
 				}
 			}
 		}
