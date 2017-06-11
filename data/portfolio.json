@@ -12,7 +12,7 @@
       "description": "The goal was to use a RESTful API to display graphs of bike traffic across the Fremont Bridge."
     },
     {
-      "name":       "Fit-O-Matic",
+      "name":       "Fitomatic",
       "category":    "recreational",
       "image":       "../assets/fitomatic-demo.png",
       "imageName":   "fitomatic",

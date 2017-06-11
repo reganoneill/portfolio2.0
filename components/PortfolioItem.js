@@ -8,20 +8,65 @@ import fitomatic from '../assets/fitomatic.png';
 
 import '../css/base/_vars.scss';
 
-const PortfolioItem = (props) => {
-  let temp = props.imageName;
+class PortfolioItem extends React.Component {
+  constructor (props){
+    super(props);
+    this.state = {
+      onHover: false
+    }
+    this.showSummary = this.showSummary.bind(this);
+    this.resetSummary = this.resetSummary.bind(this);
+  }
 
+  showSummary(){
+    this.setState(function(){
+      return {
+      onHover: true
+      }
+    })
+  }
+
+  resetSummary(){
+    this.setState(function(){
+      return {
+      onHover: false
+      }
+    })
+  }
+
+  render(){
+    let temp = this.props.imageName;
     return (
       <li>
-        <a href={props.link}>{props.name}</a>
-        <a href={props.github}>SOURCE</a>
-        <p>Tech Used: {props.tech}</p>
-        { props.image ?
-          <img src={require('../assets/' + temp + '.png')}/>
-          : null
-        }
+        <h4>{this.props.name}</h4>
+        <div
+          onMouseEnter={this.showSummary}
+          onMouseLeave={this.resetSummary}
+          className='imageAndSummaryHolder'>
+
+          {!this.state.onHover ?
+          <div className="imageHolder">
+          {this.props.image ?
+            <img src={require('../assets/' + temp + '.png')}/>
+            : null
+          }
+          </div> : null }
+
+          {this.state.onHover ?
+          <div className='summaryHolder'>
+            <div>
+              <p>{this.props.description}</p>
+              <p><a href={this.props.link}>{this.props.link}</a></p>
+            </div>
+            <div>
+              <p>Tech: {this.props.tech}</p>
+              <p>github icon here</p>
+            </div>
+          </div> : null}
+        </div>
       </li>
     )
+  }
 }
 
 PortfolioItem.PropTypes = {
