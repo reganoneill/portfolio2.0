@@ -2,7 +2,8 @@
   {
       "name":       "Fremont Patroller",
       "category":    "recreational",
-      "image":       "images/fremontPatroller.png",
+      "image":       "../assets/fremontPatrollerDemo.png",
+      "imageName":   "fremontPatroller",
       "collaborators": "Erick Mock, Marc Fieser, Pavel Parkhomey",
       "link":   "https://fremont-bike-patroller.herokuapp.com/",
       "github": "https://github.com/reganoneill/fremont-bike-tracker",
@@ -13,13 +14,26 @@
     {
       "name":       "Fit-O-Matic",
       "category":    "recreational",
-      "image":       "images/photo.png",
+      "image":       "../assets/fitomatic-demo.png",
+      "imageName":   "fitomatic",
       "collaborators":  "Zachary Crumbo, Gary Lundgren",
       "link":   "http://www.fitomatic.bike",
       "github": "https://github.com/GLSea1979/fit-O-matic",
       "tech": "Angular, Express, MongoDB",
       "publishedOn": "",
       "description": "Full stack application where we hand built the API, a CMS to manage it, and a front end for users to interact with."
-  }
+  },
+  {
+    "name":       "reganoneill.io",
+    "category":    "recreational",
+    "image":       null,
+    "imageName":   null,
+    "collaborators":  null,
+    "link":   "http://www.reganoneill.io",
+    "github": "https://github.com/reganoneill/portfolio2.0",
+    "tech": "React, Gatsby, HTML, CSS",
+    "publishedOn": "",
+    "description": "Personal site"
+}
 
 ]

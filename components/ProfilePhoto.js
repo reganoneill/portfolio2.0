@@ -17,6 +17,7 @@ const ProfilePhoto = (props) => {
 
 	// const photoSource = src || sample(imagePool);
 	const photoSource = src;
+
   return (
     <img
       //src={prefixLink(photoSource)}
