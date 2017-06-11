@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 
 import details from '../data/contact';
 
-console.log(details, 'yeah');
 const ContactPage = () => {
 	return(
 		<div>

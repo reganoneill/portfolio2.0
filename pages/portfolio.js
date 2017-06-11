@@ -14,7 +14,9 @@ const PortfolioPage = () => (
             {
               projects.map( item => {
                 return(
-                  <PortfolioItem {...item}/>
+                  <PortfolioItem
+                    key={item.name}
+                  {...item}/>
                 )
               })
             }
