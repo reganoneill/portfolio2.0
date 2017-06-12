@@ -1,6 +1,8 @@
 import React, {PropTypes} from 'react';
 import { prefixLink } from 'gatsby-helpers';
 import { sample, replace, trimEnd } from 'lodash';
+const FaGitHub = require('react-icons/lib/fa/github');
+
 
 //assets
 import fremontPatroller from '../assets/fremontPatroller.png';
@@ -36,6 +38,9 @@ class PortfolioItem extends React.Component {
 
   render(){
     let temp = this.props.imageName;
+    let divStyle = {
+      background: this.props.color
+    };
     return (
       <li>
         <h4>{this.props.name}</h4>
@@ -53,14 +58,18 @@ class PortfolioItem extends React.Component {
           </div> : null }
 
           {this.state.onHover ?
-          <div className='summaryHolder'>
+          <div className='summaryHolder' style={divStyle}>
             <div>
               <p>{this.props.description}</p>
               <p><a href={this.props.link}>{this.props.link}</a></p>
             </div>
             <div>
               <p>Tech: {this.props.tech}</p>
-              <p>github icon here</p>
+              <div className='gitHub'>
+                  <a href={this.props.github}>
+                <FaGitHub />
+                </a>
+              </div>
             </div>
           </div> : null}
         </div>

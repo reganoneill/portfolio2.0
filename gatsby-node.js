@@ -1,10 +1,11 @@
 import postBuild from './post-build';
+import ExtractTextPlugin from ('extract-text-webpack-plugin');
 
 exports.modifyWebpackConfig = (config) => {
   const resolveConfig = config.resolve();
   resolveConfig.alias = {
     components: './components',
-    css: './css',
+    css: './scss',
   };
 
 
@@ -22,7 +23,11 @@ exports.modifyWebpackConfig = (config) => {
   return cfg
 })
 
-
+config.loader('css-loader', function(cfg) {
+ cfg.test = /\.scss$/,
+ cfg.loader = ExtractTextPlugin.extract(['css-loader', 'sass-loader', 'postcss-loader'])
+ return cfg
+})
 
   config.resolve = () => resolveConfig;
 

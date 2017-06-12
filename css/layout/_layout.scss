@@ -8,7 +8,7 @@ body {
 
 	height: 100vh;
 	.shell {
-			color: $lush-green;
+			color: $beets;
 			height: 100vh;
 			display: flex;
 			justify-content: center;
@@ -93,7 +93,19 @@ body {
 				justify-content: center;
 				height: 100%;
 				width: 100%;
-				background-color: orange;
+				//background-color: $deep-blue;
+				background-color: hsla(30, 95%, 49%, 0.8);
+				color: $white;
+				.gitHub {
+					font-size: 3em;
+					margin: 0 1.75em;
+				}
+				a {
+					color: $white;
+				}
+				p {
+					color: $white;
+				}
 			}
 			}
 		}
@@ -102,28 +114,25 @@ body {
 
 	// about page
 .aboutSkills {
-	margin: 2em 0;
+	margin-top: 2em;
 }
 	.allSkills {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		height: 40em;
+		margin: 1.75em;
 		//border: 1px black solid;
 		.skills {
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			height: 10em;
+			flex-wrap: wrap;
+			height: 5em;
 			.techTool {
-				border: 1px solid;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				border-radius: 60px;
-				height: 6em;
-				width: 6em;
-
 			}
 		}
 	}
