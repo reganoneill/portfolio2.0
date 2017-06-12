@@ -9,6 +9,7 @@
       "github": "https://github.com/reganoneill/fremont-bike-tracker",
       "tech": "jQuery, Express, Moment, D3",
       "publishedOn": "2016-11-18",
+      "color": "#f47d06",
       "description": "The goal was to use a RESTful API to display graphs of bike traffic across the Fremont Bridge."
     },
     {
@@ -21,6 +22,7 @@
       "github": "https://github.com/GLSea1979/fit-O-matic",
       "tech": "Angular, Express, MongoDB",
       "publishedOn": "",
+      "color": "#061639",
       "description": "Full stack application where we hand built the API, a CMS to manage it, and a front end for users to interact with."
   },
   {
@@ -32,7 +34,8 @@
     "link":   "http://www.reganoneill.io",
     "github": "https://github.com/reganoneill/portfolio2.0",
     "tech": "React, Gatsby, HTML, CSS",
-    "publishedOn": "",
+    "publishedOn": "#061639",
+    "color": "#340138",
     "description": "Personal site"
 }
 

@@ -1,22 +1,38 @@
+@import '../base/vars.scss';
+
 * {
 	box-sizing: border-box;
 }
 
 h1 {
+	margin: 0.25em;
 	font-size: 4em;
+	color: $beets;
 }
 
 h2{
+	margin: 0.25em;
 	font-size: 3em;
+	color: $beets;
 }
 
 h3{
+	margin: 0.25em;
 	font-size: 2em;
+	color: $beets;
 }
 
 h4{
+	margin: 0.25em;
 	font-size: 1.5em;
+	color: $beets;
 }
 a {
 	text-decoration: none;
+	color: $lush-green;
+
+}
+
+body {
+	font-family: 'Titillium Web', sans-serif;
 }

@@ -8,6 +8,15 @@ import ProfilePhoto from '../components/ProfilePhoto';
 
 import '../css/modules/styles.scss';
 
+import WebFont from 'webfontloader';
+
+WebFont.load({
+  google: {
+    families: ['Jura|PT+Sans|Titillium+Web']
+  }
+});
+
+
 class SiteIndex extends React.Component {
   render(){
 
