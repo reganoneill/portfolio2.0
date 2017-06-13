@@ -4,6 +4,9 @@ import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 import '../css/theme/styles.scss';
 
+const githubs = 'https://github.com/reganoneill/';
+const linkedInd = 'https://www.linkedin.com/in/regan-oneill/';
+
 function Toolbox(props){
   let basics = ['Unix', 'Git', 'JavaScript', 'CSS', 'HTML'];
   let frameworks = ['Angular', 'React', 'jQuery'];
@@ -77,9 +80,9 @@ function Toolbox(props){
 const AboutPage = () => (
     <div className="mainPage">
 				<h1>About</h1>
-				<p>Nunc et turpis vel metus suscipit tristique in quis tortor. Nullam sodales sem in magna laoreet fermentum. Vestibulum et erat id est finibus fringilla. Nullam interdum ante lorem, at suscipit nulla elementum sit amet. Vivamus mattis bibendum arcu eu scelerisque. Curabitur sit amet sollicitudin justo. Fusce vehicula, magna tincidunt eleifend rutrum, odio nunc aliquam sapien, nec rhoncus metus diam eget quam. Sed cursus, metus sed rutrum fringilla, tortor ex venenatis orci, eu blandit orci nibh id metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce leo tortor, blandit a mauris sit amet, pharetra dignissim purus. Fusce augue erat, suscipit at pretium vitae, elementum ac erat.
+				<p>Software developer with a background in digital marketing and business development. My diverse skill set lends a unique perspective to creating and maintaining great products. I’m constantly learning and looking for opportunities to craft better solutions. My experience leans towards front-end work, but I enjoy working in all levels of the stack and writing tests to ensure a consistent and predictable experience.</p>
 
-Etiam ornare ornare sem, eu sagittis lacus consequat in. Vivamus ac sagittis nisi, ac tempor turpis. Aenean rhoncus lobortis erat. Ut cursus commodo sodales. Ut magna orci, tempus vitae purus quis, pulvinar eleifend elit. Phasellus porta nec diam quis hendrerit. Mauris feugiat augue eros, quis vulputate neque finibus ac. Proin aliquam molestie sem, id fermentum nunc fermentum eget. Suspendisse imperdiet urna auctor ipsum consequat tempus. Proin et pulvinar magna, sit amet facilisis est.</p>
+        <p className="aboutLinks">Take a look at some of <a href='../portfolio/'>my work</a> or <a href={githubs}>recent projects</a> and find me on <a href={linkedInd}>LinkedIn</a></p>
 
       <h2 className="aboutSkills">Skills</h2>
       <Toolbox />

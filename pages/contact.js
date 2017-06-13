@@ -5,21 +5,10 @@ import details from '../data/contact';
 
 const ContactPage = () => {
 	return(
-		<div>
+		<div className='contact'>
 			<h1>Contact</h1>
-			<h4>Fastest: </h4>
-			<div>
-				<p>{details.phone}</p>
-			</div>
-			<h4>Faster: </h4>
-			<div>
-				<p>{details.email}</p>
-			</div>
-			<h4>Fast: {}</h4>
-			<div>
-				<p>{details.linkedIn}</p>
-			</div>
-
+			<h4>{details.email}</h4>
+			<h4><a href={details.linkedIn}>LinkedIn</a></h4>
 		</div>
 	)
 }

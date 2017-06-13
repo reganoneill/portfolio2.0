@@ -9,8 +9,8 @@
       "github": "https://github.com/reganoneill/fremont-bike-tracker",
       "tech": "jQuery, Express, Moment, D3",
       "publishedOn": "2016-11-18",
-      "color": "#f47d06",
-      "description": "The goal was to use a RESTful API to display graphs of bike traffic across the Fremont Bridge."
+      "color": "#061639",
+      "description": "Utilized Seattle's Open Data Program API (via Socrata) to let users choose a date range to see graphs of bike traffic across the Fremont Bridge displayed."
     },
     {
       "name":       "Fitomatic",
@@ -20,10 +20,10 @@
       "collaborators":  "Zachary Crumbo, Gary Lundgren",
       "link":   "http://www.fitomatic.bike",
       "github": "https://github.com/GLSea1979/fit-O-matic",
-      "tech": "Angular, Express, MongoDB",
+      "tech": "Angular, Express, MongoDB, Node",
       "publishedOn": "",
-      "color": "#061639",
-      "description": "Full stack application where we hand built the API, a CMS to manage it, and a front end for users to interact with."
+      "color": "#f47d06",
+      "description": "Full stack application which allows logged in users to enter specific measurements in order to receive any number of bike models whose dimensions align with theirs."
   },
   {
     "name":       "reganoneill.io",
@@ -36,7 +36,7 @@
     "tech": "React, Gatsby, HTML, CSS",
     "publishedOn": "#061639",
     "color": "#340138",
-    "description": "Personal site"
+    "description": "Personal site I built to learn more about React and some popular libraries supporing it."
 }
 
 ]

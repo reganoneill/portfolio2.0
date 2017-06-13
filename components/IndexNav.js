@@ -11,7 +11,6 @@ class Navigation extends React.Component {
 			<li><a href={prefixLink('/about/')}>about</a></li>
 			<li><a href={prefixLink('/portfolio/')}>portfolio</a></li>
 			<li><a href={prefixLink('/contact/')}>contact</a></li>
-			<li><a href={prefixLink('/blog/')}>blog</a></li>
 		</ul>
 	</nav>
 )
